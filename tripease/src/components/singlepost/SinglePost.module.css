@@ -1,0 +1,54 @@
+.container{
+background-image: url(../../../public/assets/bg4.png);
+background-repeat: no-repeat;
+background-size: cover; 
+background-position: 'center';
+width: 60rem;
+}
+.profileContainer
+{
+    display: flex;
+    margin-left: 0.5rem;
+}
+.leftProfileContainer img{
+    border-radius: 50%;
+    height:40px;
+    margin-top: 1rem;
+}
+.rightProfileContainer
+{
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+}
+.profileBody
+{
+    border:2px solid #ffca2c;
+    width: 59rem;
+    height:28rem;
+    margin-left: 0.5rem;
+}
+.description
+{
+    color:#ecc550;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.imageContainer
+{
+    border:2px solid rgb(27, 24, 24);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height:auto;
+    border-radius: 5px;
+
+}
+.imageContainer img {
+    width: 100%; /* Allow the image to scale */
+    height: 100%;
+    margin: 0 auto; /* Center the image */
+    object-fit: cover;
+    
+}

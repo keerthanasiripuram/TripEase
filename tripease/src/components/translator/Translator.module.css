@@ -1,0 +1,44 @@
+.container
+{
+    display:flex;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.button
+{
+margin-top: 5rem;
+margin-left: 2rem;
+margin-right: 2rem;;
+}
+.button button{
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: rgba(255, 202, 44, 0.7);
+    border: 1px solid #ffca2c;
+}
+.to div
+{
+    border-radius: 0.5rem;
+    border: 1px solid #ffca2c;
+}
+
+.to div
+{
+    width: 443px;
+    height: 275px;
+    border: 1px solid #ffca2c;
+    white-space: pre-line ;
+    overflow: auto;   
+
+}
+
+.from textarea
+{
+    border-radius: 0.5rem;
+    border: 1px solid #ffca2c;
+    width: 443px;
+    height: 275px;
+    background-color: black !important;
+    color: white;
+}

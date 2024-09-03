@@ -1,0 +1,17 @@
+.heading
+{
+    color:white;
+    font-family: cursive;
+    
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+.map{
+   background-color: aliceblue !important;
+    border:2px solid #ffac2c;
+    height: 500px;
+    width: 80%;
+    margin: auto;
+}

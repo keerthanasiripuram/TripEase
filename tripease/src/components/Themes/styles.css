@@ -1,0 +1,26 @@
+.light, .dark, .solarized {
+    transition: color 0.5s ease, background-color 0.5s ease; 
+}
+.title {
+    font-family: cursive;
+    text-align: center;
+}
+
+.light {
+    color: #b3953e; /* Light theme color */
+    background-color: rgba(12, 114, 230, 0.354);
+    font-family: cursive;
+    text-align: center;
+}
+
+.dark {
+    color: #ffca2c; /* Dark theme color */
+    background-color: #000000;
+    font-family: cursive;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.solarized {
+    color: #657b83; /* Solarized theme color */
+}

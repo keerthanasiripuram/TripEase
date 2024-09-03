@@ -1,0 +1,52 @@
+.modal-container
+{
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+.modal{
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding:2rem;
+    width:30em
+}
+
+.btn{
+    border:none;
+    
+    padding:0.5rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    font-size:1rem;
+}
+.btn-submit{
+    background-color: green;
+}
+.btn-cancel{
+    background-color: red;
+}
+.close
+{
+    cursor: pointer;
+}
+.modal-header
+{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+}
+.modal-content{
+    margin-bottom: 2rem;
+}
+.modal-footer
+{
+    display: flex;
+    justify-content: space-evenly;
+}

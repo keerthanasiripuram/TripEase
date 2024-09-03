@@ -1,0 +1,22 @@
+.heading
+{
+    border:1px solid #ffca2c;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 1rem;;
+}
+.collection
+{
+    width: fit-content;
+      height: fit-content;
+      padding: 10px;
+    border: 1px solid #ffca2c;
+}

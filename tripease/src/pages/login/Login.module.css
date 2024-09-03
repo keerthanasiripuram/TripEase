@@ -1,0 +1,46 @@
+
+.loginImg{
+    height:25rem;
+    width:20rem;
+}
+.loginContainer
+{ 
+    display:flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+}
+
+.login{
+    border: 2px solid #3d5676;
+    border-radius: 10px;
+    width: 30rem;
+    padding: 20px;
+    margin-left: 5rem;
+}
+
+.loginPage{
+    display: flex;
+    height: 100vh;
+}
+
+.inputField{
+    margin-bottom: 5px;
+    display: flex;
+}
+.btnContainer
+{
+    display:flex;
+    
+    justify-content: space-between;
+    padding-top: 0.5rem;
+}
+.btn
+{
+    border:2px solid #3d5676;
+    border-radius: 0.5rem;
+    background-color: #3d5676;
+    color:white;
+    padding: 0.2rem;
+}

@@ -1,0 +1,23 @@
+.navbar
+{
+    display:flex;
+    padding: 1rem;
+}
+.leftContainer
+{
+    border:2px solid red;
+    padding:1rem;
+}
+.rightContainer
+{
+    border:2px solid green;
+    display:flex;
+    flex:1;
+    padding:0.5rem;
+}
+.title
+{
+    font-family: cursive;
+    text-align: center;
+    color:#b3953e
+}

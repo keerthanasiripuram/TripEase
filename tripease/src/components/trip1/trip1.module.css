@@ -1,0 +1,153 @@
+.container
+{
+display:flex;
+flex-direction: row;
+height: 100vh;
+}
+.leftContainer
+{
+    width:18rem;
+    display: flex;
+    flex-direction: column;
+}
+.rightContainer
+{
+    width:100%;
+}
+.trip{
+
+display:flex;
+flex-direction: column;
+height: 2.5rem;
+position: relative;
+border: 2px solid #ffac2c;
+border-radius: 0.3rem;
+gap:0.3rem;
+margin-top: 0.5rem;
+padding: 0.2rem;
+}
+.trip:hover {
+    background-color: rgba(255, 202, 44, 0.5);
+    border: 2px solid #ffac2c;
+}
+.icons
+{
+
+    margin-top: 0;
+    position: absolute;
+    margin-left: 9.5rem;
+}
+.expenseContainer
+{
+    border:1px solid #ffac2c;
+    display:flex;
+    justify-content: space-between;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    height:2.5rem;
+    margin: 0.2rem;
+}
+.header
+{
+    border:1px solid #ffac2c;
+    display: flex;
+    justify-content: space-between;
+    height:40px;
+    border-radius: 0.2rem;
+    padding-top: 0.3rem;
+    margin: 0.2rem;
+}
+.header h5{
+    font-family: cursive;
+}
+.btngrp
+{
+    display:flex;
+    gap:0.5rem
+}
+.showBtn
+{
+    border: 2px solid green;
+    color:white;
+    background-color: green;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    width:80px;
+    height:40px;
+}
+.close
+{
+    color:white;
+    background-color:red;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    width:80px;
+    height:40px
+}
+.createGroupContainer
+{
+border:2px solid #ffac2c;
+height:3rem;
+display:flex;
+justify-content: space-around;
+margin-bottom: 0.2rem;
+border-radius: 0.3rem;
+}
+.displayContainer
+{
+    border:2px solid #ffac2c;
+    border-radius: 0.2rem;
+    height:100%;
+    padding:0.5rem;
+}
+.showExpenses
+{
+    border:2px solid violet;
+    display:flex;
+    flex-direction: column;
+    gap:0.2rem;
+}
+.showExpenseName
+{
+    border:2px solid rgb(22, 15, 65);
+    display: flex;
+    margin: auto;
+}
+.showExpenseAmount
+{
+    border:2px solid white;
+    display: flex;
+    margin: auto;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.tripmodalcontainer
+{
+    margin:5rem;
+}
+
+.modal1Wrapper
+{
+    position: fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    background-color: rgba(189,189,189,0.9);
+}
+
+.modal1Container
+{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    padding:2rem 3rem;
+    border-radius:0.5rem;
+    background-color: #fff;
+    border:2px solid black;
+}

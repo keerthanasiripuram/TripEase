@@ -1,0 +1,27 @@
+/* *
+{
+    color:#fff ;
+    background-color:#212529;
+} */
+.logo
+{
+    color:#000;
+    background-color: #ffca2c;
+    text-decoration: none;
+    margin: 0.3rem;
+    border:#ffca2c;
+    font-size: 30px;
+    font-weight: bold;
+    padding:0.3rem;
+    border-radius: 0.2rem;
+}
+.custom_button
+{
+color:"#ffca2c";
+border:2px solid #ffca2c;
+padding:0.3rem;
+border-radius: 0.2rem;
+margin-top:0.2rem;
+height:2.5rem;
+background-color: #ffca2c;
+}

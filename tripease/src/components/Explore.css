@@ -1,0 +1,21 @@
+.my-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .my-table th, .my-table td {
+    border: 1px solid #ffca2c;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .my-table th {
+    background-color: rgba(255, 202, 44, 0.5);
+    border: 1px solid #ffca2c;
+    color: #333;
+  }
+  .my-table tr {
+    transition: background-color 0.3s ease; /* Add transition */
+  }
+ 
+  
