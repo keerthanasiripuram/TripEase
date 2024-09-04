@@ -4,6 +4,7 @@ A comprehensive travel management application developed to enhance my skills in 
 stack, with Python integration for machine learning features. The intuition behind creating this 
 project was to build a unified platform that addresses common travel needs, making trip planning 
 and management more efficient and enjoyable.
+
 ![Screenshot 2024-09-02 114105](https://github.com/user-attachments/assets/e921faf7-914c-46ba-bfa4-c71c8e5af381)
 
 It includes the following features:
