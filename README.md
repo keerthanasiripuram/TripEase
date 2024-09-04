@@ -28,8 +28,8 @@ Enables groups to split expenses based on shares, percentages, or equally, facil
 ### Trip Monitoring: 
 Track and manage trip details such as trip names, dates, and related expenses, offering a clear overview of travel plans and costs.
 
- <img width="959" alt="near_by_spots" src="https://github.com/user-attachments/assets/864dd427-7f4a-45a6-96aa-320801be2c16">
- 
+ ![Screenshot 2024-09-02 124247](https://github.com/user-attachments/assets/81ebd4b2-fc4b-48f7-85ee-4f7cf6e18207)
+
 ### Weather Information:
 Integrated with the OpenWeather API to provide users with current and forecasted weather information at their travel destination, helping them plan better.
 
