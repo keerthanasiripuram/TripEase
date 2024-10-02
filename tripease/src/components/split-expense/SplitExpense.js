@@ -339,7 +339,7 @@ const SplitExpense = () => {
             let params = {
                 group: selectedGroup
             }
-            const response = await axiosInstance.get('http://localhost:3000/expense-management/history-data', { params })
+            const response = await axiosInstance.get('https://tripease-uug5.onrender.com/expense-management/history-data', { params })
             if (response.data.data) {
                 let data = response.data.data.map(doc => {
                     doc['displayDate'] = moment(doc.createdAt).format('MMMM Do YYYY, h:mm:ss a');
@@ -360,7 +360,7 @@ const SplitExpense = () => {
             let params = {
                 group: selectedGroup
             }
-            const response = await axiosInstance.get('http://localhost:3000/expense-management/user-totals', { params })
+            const response = await axiosInstance.get('https://tripease-uug5.onrender.com/expense-management/user-totals', { params })
             if (response.data.data)
                 setTotalsData(response.data.data)
         }
@@ -373,7 +373,7 @@ const SplitExpense = () => {
 
     const fetchGroups = async () => {
         try {
-            const response = await axiosInstance.get('http://localhost:3000/expense-management/user-groups', {})
+            const response = await axiosInstance.get('https://tripease-uug5.onrender.com/expense-management/user-groups', {})
             if (response.data.data)
                 setGroups(response.data.data)
         }
@@ -386,7 +386,7 @@ const SplitExpense = () => {
 
     const fetchAllUsers = async () => {
         try {
-            const response = await axiosInstance.get('http://localhost:3000/expense-management/users', {})
+            const response = await axiosInstance.get('https://tripease-uug5.onrender.com/expense-management/users', {})
             let users = response.data.data.map(data => {
                 data['selected'] = false
                 return data
@@ -403,7 +403,7 @@ const SplitExpense = () => {
 
     const addGroup = async (params) => {
         try {
-            await axiosInstance.post('http://localhost:3000/expense-management/user-groups', params)
+            await axiosInstance.post('https://tripease-uug5.onrender.com/expense-management/user-groups', params)
             fetchGroups()
             onAddGroupDialogClose()
 
@@ -420,7 +420,7 @@ const SplitExpense = () => {
             group: group._id
         }
         try {
-            await axiosInstance.put('http://localhost:3000/expense-management/delete-group', params)
+            await axiosInstance.put('https://tripease-uug5.onrender.com/expense-management/delete-group', params)
             fetchGroups()
         }
         catch (err) {
@@ -435,7 +435,7 @@ const SplitExpense = () => {
             group: group._id
         }
         try {
-            let response = await axiosInstance.get('http://localhost:3000/expense-management/group-details', { params })
+            let response = await axiosInstance.get('https://tripease-uug5.onrender.com/expense-management/group-details', { params })
             if (response.data.data)
                 setgroupDetailsData(response.data.data)
         }
@@ -451,7 +451,7 @@ const SplitExpense = () => {
             group: selectedGroup
         }
         try {
-            let response = await axiosInstance.get('http://localhost:3000/expense-management/group-users', { params })
+            let response = await axiosInstance.get('https://tripease-uug5.onrender.com/expense-management/group-users', { params })
             if (response.data.data) {
                 let users = response.data.data.map(data => {
                     data['amount'] = 0
@@ -470,7 +470,7 @@ const SplitExpense = () => {
 
     const addSplit = async (params) => {
         try {
-            await axiosInstance.post('http://localhost:3000/expense-management/add-split', params)
+            await axiosInstance.post('https://tripease-uug5.onrender.com/expense-management/add-split', params)
             onSplitDialogClose()
             getHistoryData()
             getTotalsData()

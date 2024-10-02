@@ -11,7 +11,7 @@ export default function Login() {
     /*api call*/
     async function submitForm(e) {
         e.preventDefault()
-        axios.post('http://localhost:3000/login', data)
+        axios.post('https://tripease-uug5.onrender.com/login', data)
             .then((response) => {
                 localStorage.setItem("token", response.data.token)
                 navigate('/home')

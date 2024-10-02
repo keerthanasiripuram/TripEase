@@ -13,7 +13,7 @@ export default function Profile() {
     {   
 
         try{
-        let user=await axiosInstance.get("http://localhost:3000/fetchUser")
+        let user=await axiosInstance.get("https://tripease-uug5.onrender.com/fetchUser")
         setUserName(user.data.data.name)
         }
         catch(err)
