@@ -7,6 +7,7 @@ const connecttomongo = async () => {
         console.log("connected")
     }
     catch (err) {
+        console.log(err)
         console.log("failed")
     }
 }

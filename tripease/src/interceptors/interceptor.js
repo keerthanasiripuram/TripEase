@@ -2,7 +2,7 @@ import axios from 'axios';
 import globalRouter from '../globalRouter';
 
 const axiosInstance = axios.create({
-    baseURL: 'https://tripease-uug5.onrender.com/',
+    baseURL: 'http://localhost:3000/',
     timeout: 10000, 
 });
 

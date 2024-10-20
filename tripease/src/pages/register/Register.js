@@ -30,7 +30,7 @@ export default function Register()
         if (!registerdata.phoneNumber.trim()) {
             message.error('Phone number is required');
             return false;
-        } else if (!/^\\+[1-9]{1}[0-9]{3,14}$/.test(registerdata.phoneNumber)) {
+        } else if (!/^\+[1-9]\d{1,14}$/.test(registerdata.phoneNumber)) {
             message.error('Phone number is invalid');
             return false;
         }
@@ -63,7 +63,7 @@ export default function Register()
         formData.append("registerData", JSON.stringify(registerdata))
         
         try{
-            const response=await axios.post("https://tripease-uug5.onrender.com/register",formData)
+            const response=await axios.post("http://localhost:3000/register",formData)
         
         if(response.data.success)
         {

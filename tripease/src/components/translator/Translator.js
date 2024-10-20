@@ -32,7 +32,7 @@ const Translator = () => {
     async function submitTextDetails() {
         try {
             setLoading(true)
-            const response = await axiosInstance.post('https://tripease-uug5.onrender.com/translateReq', { text, selectedOption })
+            const response = await axiosInstance.post('http://localhost:3000/translateReq', { text, selectedOption })
             setTranslatedText(response.data.data)
         }
         catch (error) {

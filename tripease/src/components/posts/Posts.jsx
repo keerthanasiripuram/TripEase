@@ -9,7 +9,7 @@ export default function Posts(props) {
     const getPostData = async () => {
         try {
 
-            const response = await axiosInstance.get('https://tripease-uug5.onrender.com/get-post-data')
+            const response = await axiosInstance.get('http://localhost:3000/get-post-data')
             if (response.data.success) {
                 setpostData(response.data.data)
             }

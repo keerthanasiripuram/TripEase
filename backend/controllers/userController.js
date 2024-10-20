@@ -44,6 +44,7 @@ module.exports.login = async (req, res) => {
                 .send({ message: "User doesn't exists", success: false })
         }
         const isMatch = await bcrypt.compare(req.body.password, userExists.password)
+        console.log(req.body.password, isMatch)
         if (!isMatch) {
             return res.status(500).send({ message: "password is incorrect", success: false })
         }
