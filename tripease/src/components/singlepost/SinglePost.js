@@ -49,7 +49,7 @@ function SinglePost({ name,key, element }) {
                 <div style={{ margin: "40px", backgroundColor: "black" }}>
                     {element.images.length == 1 ? <div className={styles.imageContainer} key={element}>
                                     <img
-                                        src={`http://localhost:3000/TripEase/backend/uploadJournal/${element.images[0]}`}
+                                        src={`https://tripease-uug5.onrender.com/TripEase/backend/uploadJournal/${element.images[0]}`}
                                         alt="Uploaded" style={{ maxHeight: "20rem" }} />
                                 </div>:
                     <Slider {...settings}>
@@ -59,7 +59,7 @@ function SinglePost({ name,key, element }) {
                             return (
                                 <div className={styles.imageContainer} key={element}>
                                     <img
-                                        src={`http://localhost:3000/TripEase/backend/uploadJournal/${element}`}
+                                        src={`https://tripease-uug5.onrender.com/TripEase/backend/uploadJournal/${element}`}
                                         alt="Uploaded" style={{ maxHeight: "20rem" }} />
                                 </div>
                             )

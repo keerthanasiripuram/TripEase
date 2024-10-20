@@ -19,7 +19,7 @@ export default function Share() {
             }
         setDisplayModal(false)
         try {
-            const response = await axiosInstance.post("http://localhost:3000/journalData", journalData, { text: text })
+            const response = await axiosInstance.post("https://tripease-uug5.onrender.com/journalData", journalData, { text: text })
 
             if (response.data.success) {
 

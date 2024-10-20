@@ -51,7 +51,7 @@ export default function Profile() {
         }
         const cnvrtd_destination = words.join(' ')
         try {
-            const response = await axiosInstance.post("http://localhost:3000/pyt-routes/hotel-recommendations", { destination: cnvrtd_destination, checkIn, checkOut, value, rating, checked });
+            const response = await axiosInstance.post("https://tripease-uug5.onrender.com/pyt-routes/hotel-recommendations", { destination: cnvrtd_destination, checkIn, checkOut, value, rating, checked });
             if (response.data && response.data.data && response.data.data.type === "Buffer") {
                 // Convert Buffer to Uint8Array
                 const bufferData = new Uint8Array(response.data.data.data);

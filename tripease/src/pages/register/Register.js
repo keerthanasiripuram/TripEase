@@ -63,7 +63,7 @@ export default function Register()
         formData.append("registerData", JSON.stringify(registerdata))
         
         try{
-            const response=await axios.post("http://localhost:3000/register",formData)
+            const response=await axios.post("https://tripease-uug5.onrender.com/register",formData)
         
         if(response.data.success)
         {

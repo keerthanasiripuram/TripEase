@@ -40,7 +40,7 @@ export default function Trip1() {
     /*Api calls*/
     async function showTripList() {
         try {
-            const response = await axiosInstance.get("http://localhost:3000/trip-management/displayTripList")
+            const response = await axiosInstance.get("https://tripease-uug5.onrender.com/trip-management/displayTripList")
             if (response.data.success) {
                 settripData(response.data.data)
 
@@ -59,7 +59,7 @@ export default function Trip1() {
     async function handleSubmit() {
         if (tripname) {
             try {
-                const response = await axiosInstance.post("http://localhost:3000/trip-management/addTripName", { tripname })
+                const response = await axiosInstance.post("https://tripease-uug5.onrender.com/trip-management/addTripName", { tripname })
 
                 if (response.data.success) {
                     showTripList()
@@ -89,7 +89,7 @@ export default function Trip1() {
                     message.error("enter valid details")
                     return
                 }
-                const response = await axiosInstance.post("http://localhost:3000/trip-management/expenseData", { expenses, budgetNameForExpense })
+                const response = await axiosInstance.post("https://tripease-uug5.onrender.com/trip-management/expenseData", { expenses, budgetNameForExpense })
 
                 if (response.data.success) {
                     message.success(response.data.message)
@@ -117,7 +117,7 @@ export default function Trip1() {
     async function displayExpenses(val) {
         setSelectedTripName(val)
         try {
-            const response = await axiosInstance.post("http://localhost:3000/trip-management/displayExpenses", { selectedTripName: val})
+            const response = await axiosInstance.post("https://tripease-uug5.onrender.com/trip-management/displayExpenses", { selectedTripName: val})
             if (response.data.success) {
                 setExpenseData(response.data.data)
 
@@ -137,7 +137,7 @@ export default function Trip1() {
 
         setSelectedTripName(val)
         try {
-            const response = await axiosInstance.post("http://localhost:3000/trip-management/displaySelectedTripData", { selectedTripName: val })
+            const response = await axiosInstance.post("https://tripease-uug5.onrender.com/trip-management/displaySelectedTripData", { selectedTripName: val })
             if (response.data.success) {
                 setExpenseData(response.data.data)
 

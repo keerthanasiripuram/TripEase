@@ -17,7 +17,7 @@ export default function Spot() {
         const displayFeature = async (val) => {
             
             try {
-                const response = await axiosInstance.post("http://localhost:3000/pyt-routes/places-recommendation", { selectedFeature: val });
+                const response = await axiosInstance.post("https://tripease-uug5.onrender.com/pyt-routes/places-recommendation", { selectedFeature: val });
 
                 if (response.data && response.data.data && response.data.data.type === "Buffer") {
                     // Convert Buffer to Uint8Array

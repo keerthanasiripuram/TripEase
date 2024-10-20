@@ -31,7 +31,7 @@ export default function DocumentManagement() {
         }
         else{
         try {
-            const response = await axiosInstance.post("http://localhost:3000/doc-management/request-OTP", { phoneNumber })
+            const response = await axiosInstance.post("https://tripease-uug5.onrender.com/doc-management/request-OTP", { phoneNumber })
             if (response.data.success) {
 
                 message.success(response.data.message)
@@ -58,7 +58,7 @@ export default function DocumentManagement() {
 
             setDisplayModal(false)
             try {
-                const response = await axiosInstance.post("http://localhost:3000/doc-management/uploadDoc", DocumentData)
+                const response = await axiosInstance.post("https://tripease-uug5.onrender.com/doc-management/uploadDoc", DocumentData)
 
                 if (response.data.success) {
 
@@ -83,7 +83,7 @@ export default function DocumentManagement() {
     async function checkValidity() {
         setimgHidden(true)
         try {
-            const response = await axiosInstance.post("http://localhost:3000/doc-management/checkValidity", { otp: otp })
+            const response = await axiosInstance.post("https://tripease-uug5.onrender.com/doc-management/checkValidity", { otp: otp })
             if (response.data.success) {
                 setsearchDisplay(true)
                 setdocuments(response.data.data)
@@ -195,7 +195,7 @@ export default function DocumentManagement() {
                             <div key={index} className={styles.picContainer}>
                                 <p className={styles.imgHeading}>{imgName}</p>
                                 <img className={styles.docImgs}
-                                    src={`http://localhost:3000/TripEase/backend/uploadDocuments/${imgsrc}`}
+                                    src={`https://tripease-uug5.onrender.com/TripEase/backend/uploadDocuments/${imgsrc}`}
                                     alt="Uploaded"
                                 />
                             </div>
