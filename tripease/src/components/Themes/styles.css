@@ -8,7 +8,8 @@
 
 .light {
     color: #b3953e; /* Light theme color */
-    background-color: rgba(12, 114, 230, 0.354);
+    /* background-color: rgba(12, 114, 230, 0.354); */
+    background-color:#000000;
     font-family: cursive;
     text-align: center;
 }

@@ -8,7 +8,7 @@ export default function Feed(props)
         <div className="feed">
             <div className="feedWrapper">
                 <Share/>
-                <Post name={props.name}/>
+                <Post name={props.name}/>{/*posts hss be rlde bcd on shre*/}
             </div>
         </div>
     )

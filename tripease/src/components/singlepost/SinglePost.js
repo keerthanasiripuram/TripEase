@@ -1,11 +1,12 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import styles from "./SinglePost.module.css";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 function SinglePost({ name,key, element }) {
     const dateOnlyString = element.createdAt.split("T")[0];
-
+    const [imgs,setImgs]=useState([])
     /*Slider Setting*/
 
     const settings = {
@@ -35,6 +36,9 @@ function SinglePost({ name,key, element }) {
         ]
     }
 
+    useEffect(()=>{
+        setImgs([...element.images])
+    },[element.images])
     return (
         <div className={styles.container}>
             <div className={styles.profileContainer}>
@@ -47,14 +51,14 @@ function SinglePost({ name,key, element }) {
             </div>
             <div className={styles.profileBody}>
                 <div style={{ margin: "40px", backgroundColor: "black" }}>
-                    {element.images.length == 1 ? <div className={styles.imageContainer} key={element}>
+                    {imgs.length == 1 ? <div className={styles.imageContainer} >
                                     <img
                                         src={`https://tripease-uug5.onrender.com/TripEase/backend/uploadJournal/${element.images[0]}`}
                                         alt="Uploaded" style={{ maxHeight: "20rem" }} />
                                 </div>:
                     <Slider {...settings}>
                         {
-                        element.images.map((element) =>{                           
+                        imgs.map((element) =>{                           
                             if(!element) return <></>
                             return (
                                 <div className={styles.imageContainer} key={element}>

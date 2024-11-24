@@ -75,6 +75,30 @@
     cursor:pointer;
     color:white
 }
+.shareJournal
+{
+    display: flex;
+    align-items: center;
+}
+.exploreWrapper
+{
+
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 55rem;
+}
+.viewBtn
+{
+    outline:none;
+    border:2px solid #ffca2c;
+    border-radius: 0.4rem;
+    padding: 0.3rem;
+    color:#ffca2c;
+    background-color: black
+}
 /* Modal container */
 .modal {
     display: none; /* Hidden by default */
@@ -87,7 +111,17 @@
     overflow: auto; /* Enable scroll if needed */
     background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
   }
-  
+  .collection
+{
+    flex: 0 1 calc(33.33% - 1rem);
+    /* flex: 1 1 30%; 3 items per row, adjust width */
+    margin: 1rem 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-radius: 0.5rem;
+    background-color: #f8f8f8;
+}
   /* Modal content */
   .modal-content {
     background-color: #fefefe;
@@ -138,5 +172,44 @@
     border-radius:0.5rem;
     background-color: #fff;
     z-index: 9999;
+    border: 2px solid black;
+    width:40rem;
+    height:30rem;
+    overflow-x: auto; 
+}
+.modalWrapper
+{
+    position: fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    background-color: rgba(189,189,189,0.9);
+    z-index: 9998;
+}
+.modalContainer
+{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    padding:2rem 3rem;
+    border-radius:0.5rem;
+    background-color: #fff;
+    z-index: 9999;
+    border: 2px solid black;
+}
+.profileModalContainer
+{
+    border:2px solid rgb(255, 238, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap:1rem;
+}
+.inputField{
+    display: flex;
+    align-items: center;
+    margin-top: 0.2rem;
 }
 

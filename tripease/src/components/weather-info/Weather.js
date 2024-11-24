@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import styles from "./weather.module.css"
 import Navbar from "../../components/navbar/Navbar"
+import {Link} from "react-router-dom"
 export default function Weather() {
 
     const [place, setplace] = useState("")
@@ -72,6 +73,8 @@ export default function Weather() {
                     <p className={styles.textStyle}>{climate}</p>
                 </div>
             </main>
+
+          {/*<Link to="/feedback">Click here to give Feedback</Link>*/}
         </>
     )
 }

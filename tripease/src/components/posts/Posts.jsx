@@ -4,12 +4,14 @@ import SinglePost from "../singlepost/SinglePost"
 import axiosInstance from "../../interceptors/interceptor"
 import styles from "./posts.module.css"
 export default function Posts(props) {
-     
+     console.log(props)
     const [postData, setpostData] = useState([])
+    const [loading, setLoading] = useState(false)
     const getPostData = async () => {
         try {
-
+            setLoading(true)
             const response = await axiosInstance.get('https://tripease-uug5.onrender.com/get-post-data')
+            setLoading(false)
             if (response.data.success) {
                 setpostData(response.data.data)
             }
@@ -22,12 +24,12 @@ export default function Posts(props) {
 
     useEffect(() => {
         getPostData()
-    }, [])
+    }, [props])//bsd 
 
     return (
         <>
             <div className={styles.rightContainer}>
-                {postData.map((element) =>
+                {!loading && postData.map((element) =>
                 (
                     <SinglePost key={element._id} name={props.name} element={element} />
                   

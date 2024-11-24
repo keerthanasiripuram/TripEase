@@ -41,9 +41,9 @@ export default function Navbar() {
                         </ul>
                         <form style={{ display: "flex", gap: "0.5rem" }} role="search">
                             <button style={{ border: "none", display:"none",outline: "none", backgroundColor: "#343a409e", color: "#ffca2c", marginTop: "1rem" }} type="button" onClick={toggleTheme}>
-                                {theme === Theme.LIGHT ? <span class="material-symbols-outlined">
+                                {theme === Theme.LIGHT ? <span className="material-symbols-outlined">
                                     dark_mode
-                                </span> : <span class="material-symbols-outlined">
+                                </span> : <span className="material-symbols-outlined">
                                     light_mode
                                 </span>}
                             </button>

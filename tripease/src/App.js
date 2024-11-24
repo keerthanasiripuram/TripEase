@@ -19,6 +19,7 @@ import Spot from "./components/spot/Spot";
 import PublicRoute from './components/publicRoute';
 import ProtectedRoute from './components/protectedRoute'
 import { ThemeProvider } from './components/Themes/ThemeContext'
+import Form from "./components/Form/Form"
 function GlobleRouter() {
     const navigate = useNavigate();
     globalRouter.navigate = navigate;
@@ -46,6 +47,7 @@ function App() {
                         <Route exact path="/hotel" element={<ProtectedRoute><Hotel /></ProtectedRoute>} />
                         <Route exact path="/spots" element={<ProtectedRoute><Spot /></ProtectedRoute>} />
                         <Route exact path="/about" element={<ProtectedRoute><AboutUs /></ProtectedRoute>} />
+                        <Route path="/feedback" element={<Form/>}/>
                     </Routes>
                 </BrowserRouter>
             </ThemeProvider>
